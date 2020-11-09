@@ -1,12 +1,5 @@
-from Elemento import BasePageElement
-from Localizador import Localizadores, resultadoLocalizadores
+from Localizador import Localizadores
 import time
-import unittest
-
-#class SearchTextElement(BasePageElement):
-
-    #The locator for search box where search string is entered
- #   locator = 'q'
 
 
 class BasePage(object):
@@ -46,13 +39,3 @@ class Send_Quote(BasePage):
         field5.send_keys('T&ste123')
         field6 = self.driver.find_element(*Localizadores.MENSAGEM)
         field6.send_keys('Mensagem de teste')
-        
-
-        
-#class SearchResultsPage(BasePage):
- #   """Search results page action methods come here"""
-
-#    def is_results_found(self):
-        # Probably should search for this text in the specific page
-        # element, but as for now it works fine
- #       return "No results found." not in self.driver.page_source

@@ -5,8 +5,8 @@ import InfoSegurado
 import InfoProduto
 import InfoPreco
 import InfoContato
-from Localizador import Localizadores, resultadoLocalizadores
-import time
+from Localizador import Localizadores
+
 
 
 class PythonOrgSearch(unittest.TestCase):

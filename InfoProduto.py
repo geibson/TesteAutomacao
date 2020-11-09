@@ -1,11 +1,5 @@
-from Elemento import BasePageElement
-from Localizador import Localizadores, resultadoLocalizadores
+from Localizador import Localizadores
 import time
-
-#class SearchTextElement(BasePageElement):
-
-    #The locator for search box where search string is entered
- #   locator = 'q'
 
 
 class BasePage(object):
@@ -51,14 +45,3 @@ class Product_Data(BasePage):
         self.driver.execute_script("arguments[0].click();", check2)
     
         
-        
-
-        
-#class SearchResultsPage(BasePage):
- #   """Search results page action methods come here"""
-
-#    def is_results_found(self):
-        # Probably should search for this text in the specific page
-        # element, but as for now it works fine
- #       return "No results found." not in self.driver.page_source
- 

@@ -1,15 +1,5 @@
-from Elemento import BasePageElement
-from Localizador import Localizadores, resultadoLocalizadores
+from Localizador import Localizadores
 import time
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
-
-#class SearchTextElement(BasePageElement):
-
-    #The locator for search box where search string is entered
- #   locator = 'q'
-
 
 class BasePage(object):
 
@@ -67,15 +57,3 @@ class Insurant_Data(BasePage):
         check7 = self.driver.find_element(*Localizadores.FENOTIPOM)
         #self.driver.execute_script("arguments[0].click();", check7)
     
-    
-        
-        
-
-        
-#class SearchResultsPage(BasePage):
- #   """Search results page action methods come here"""
-
-#    def is_results_found(self):
-        # Probably should search for this text in the specific page
-        # element, but as for now it works fine
- #       return "No results found." not in self.driver.page_source
